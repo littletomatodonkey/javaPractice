@@ -8,7 +8,8 @@ public class packageTest {
 		java.util.Date today = new java.util.Date();
 		System.out.println(today);
 		
-		classDog dog = new classDog(23, "test");
+		new classDog(23, "test");
+		
 		
 	}
 
