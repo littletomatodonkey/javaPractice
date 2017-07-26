@@ -1,9 +1,27 @@
 package test.gry;
 
-public class exceptionTest {
+public class ExceptionTest {
+	
+	public static void subZeroTest() {
+		try
+		{
+			int a = 2, b = 0;
+			int res = a / b;
+		}
+		catch (ArithmeticException e) {
+			System.out.println(e.toString());
+		}
+		catch (Exception e) {
+			System.out.println(e.toString());
+		}
+	}
 
 	
 	public static void main(String[] args) {
+		
+		subZeroTest();
+		
+		
 		String arr[] = {"1234", "akmdbjv", "l354f", "24389d"};
 		
 		int res = 0;
